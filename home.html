@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<h1> Hello World </h1>
+
+<form  action= "{% url 'Result' %}">
+    {% csrf_token %}
+
+    Open: <input type="number" required name="open"/> <br>
+    High: <input type="number" required name="high"/> <br>
+    Low: <input type="number" required name="low"/> <br>
+    Volume: <input type="number" required name="vol"/> <br>
+
+    <input type = "submit" value="Submit"/>
+</form>
+
+
+</body>
+</html>
